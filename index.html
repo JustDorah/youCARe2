@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>yourCARe</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Raleway:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="heading">
+            <div class="content">
+                <div class="content-text">
+                    <a href="index.html" id="logo">
+                        <img src="images/y.png" alt="logo" class="logo">
+                    </a>
+                    <h3 class="title">yourCARe</h3>
+                    <p class="text">Access your next manufacturer based maintenance using your vin number and current
+                        mileage</p>
+                </div>
+                <div .content-btn>
+                    <button role="button" class="welcomeBtn spin">Welcome</button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!--  -->
+    <main>
+        <section class="first light">
+      
+                <h1 id="entry">Welcome</h1>
+                <p>Please enter the following information</p>
+        
+                <form class="vmForm" id="vinForm">
+                    <!-- <div class="vinNum"></div> -->
+                        <label  for="vinNumber">VIN Number:</label>
+                        <input  type="text" name="vinNumber" id="enterVin" maxlength="17" minlength="17" value="2CNALDEC9B6425535" required>  
+                    <!-- </div> -->
+                    <!-- <div class="miles"> -->
+                        <label for="mileage">Mileage:</label>
+                            <input type="text" name="mileage" id="enterMileage" value="65000" required>                        
+                    <!-- </div> -->
+                    <div class="btn">
+                        <a href="#car">
+                            <button class="submitBtn" type="submit">Enter</button>
+                        </a>
+                    </div>
+                </form>
+                <div class="errorDisplay "></div>
+        </section>
+        <section id="car" class="second grid darkish">
+            <!--hidden -->
+            <h2>General Information</h2>
+            <div class="generalInfo grid2">
+                <div class="a a1">Manufaturer :</div>
+                <div class="b b1" contenteditable="false" data-placeholder="Not Available"></div>
+
+                <div class="a a2">Model :</div>
+                <div class="b b2" contenteditable="false" data-placeholder="Not Available"></div>
+
+                <div class="a a3">Year :</div>
+                <div class="b b3" contenteditable="false" data-placeholder="Not Available"></div>
+
+                <div class="a a4">Mileage :</div>
+                <div class="b b4" contenteditable="false" data-placeholder="Not Available"></div>
+            </div>
+            <div class="displayGenInfo hidden"></div>
+            </div>
+        </section>
+        <section class="third light">
+            <div class="services">
+                <h1>Your maintenance</h1>
+                <div class="para">
+                    <p>Your maintenance is due is shown within a +/- 10000 mile range based on the mileage you have
+                        provided
+                    </p>
+                </div>
+                <div class="span">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <span class="span-table">Maintenance Schedule</span>
+
+                                <th>Description</th>
+                                <th>Mileages Due</th>
+                            </tr>
+                        </thead>
+                        <tbody class="displayMaintenance">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="center darkish">
+        <div class="tech grid-3">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js-square"></i>
+        </div>
+        <p>yourCARe &copy; 2019</p>
+    </footer>
+    <!--External JS script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Local JS script-->
+    <script src="response.js"></script>
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
