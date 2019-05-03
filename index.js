@@ -146,13 +146,7 @@ function displayGenCar(responseJson, milesDriven) {
         <p class="errorMobile"><span><strong> It seems that something is not right...</strong></span><br>
         Double check that your VIN is correct.  yourCARe can only report on vehicles with a 17 character VIN.</p>`);
 
-        
-        //alert("Vin is wrong!");
-
-        //add grid2 to display gen info
-        
-        //display gen info
-        
+    
     }
     /*
     //Remove empty general info
@@ -200,7 +194,7 @@ function getCarMaintenance(vin, milesDriven) {
     const maintInfoQuery = `vin=${vin}&mileage=${milesDriven}`;
 
     const urlMaint = forNonProductionHelp + maintenanceBaseURL + '?' + maintInfoQuery;
-    /*
+    
         fetch(urlMaint, myInit)
             .then(response => {
                 if (response.ok) {
@@ -218,13 +212,13 @@ function getCarMaintenance(vin, milesDriven) {
             })
             .catch(err => {
                 console.log('error', err)
-            });*/
+            });
 }
 
 function cleanOutData(responseJson) {
-
-    const data = returned.data
-    //responseJson.data; //data in json
+    const data =responseJson.data; //data in json
+    //const data = returned.data
+    
     console.log(data);
     const condensed = [];
     console.log(data[0].desc);
