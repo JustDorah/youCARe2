@@ -207,6 +207,7 @@ function cleanOutData(responseJson) {
 
 function displayCarMaintenance(condensed) {
     $('.displayMaintenance').empty();
+    $('table').removeClass('hidden');
     console.log(condensed);
     for (let i = 0; i < condensed.length; i++) {
 
