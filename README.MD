@@ -4,7 +4,7 @@
 
 **Description**  
 Users can access their car manufacturer maintenance schedule through their vin number<sup>+</sup>.  
-    * API- carMD
+    * API- carMD  
     * Vehicle API - NHTSA  
 
 [**Click**](https://justdorah.github.io/youCARe2/) for live page    
