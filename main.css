@@ -76,7 +76,6 @@ p{
     width: 300px;
     height: 350px;
     text-align: center;
-    /* transition: all 1000ms; */
 }
 
 img.logo {
@@ -89,7 +88,7 @@ img.logo {
     font-family: 'Raleway', sans-serif;
 }
 
-.content .text {/* fix do a zindex and a blur frame above all else. on click disappears*/
+.content .text {
     line-height: 1.2;
     margin-top: 1rem;
 }
@@ -277,7 +276,7 @@ section.second{
     grid-column: 4/5;
 }
 
-/*Section Three Stylings*/
+/*Section Three/ Table Stylings*/
 .third{
     text-align: center;
 }
@@ -312,20 +311,23 @@ td.desc-cell{
     max-width: 225px;
     text-align: left;
 }
+td.align{
+    text-align: left;
+}
 
-
-
-/*
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-} */
-
+/* Footer Stylings */
+footer {
+    padding: 1rem;    
+}
+i{
+    margin: 0em 1em;
+}
 .center {
     text-align: center;
     margin: auto;
 }
 
+/* Dark/Light page separation */
 .light {
     background: #f4f4f4;
     color: #333333;
@@ -336,32 +338,3 @@ td.desc-cell{
     color: #f4f4f4;
 }
 
-
-footer {
-    padding: 1rem;    
-}
-i{
-    margin: 0em 1em;
-}
-/* Small screens
-@media(max-width: 400px) {
-    .heading::after {
-        height: 50vh;
-    }
-    .content{
-        top: 5%;
-        margin-top: 5px;
-    }
-    img.logo{
-        height: 140px;
-        width: 60px;
-    }
-    .content .text{
-        display: none;
-    }
-    .grid{
-        grid-template-columns: 1fr;
-    }
-    
-    
-} */
