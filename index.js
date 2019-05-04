@@ -12,11 +12,16 @@ const genInfoBaseUrl = 'https://vpic.nhtsa.dot.gov/api/vehicles/decodevinextende
 
 function appStart() {
     console.log('app has started');
+    $(window).on('load', removeLoader());
     landingPage();
     submitVinMileageInfo();
     cleanOutData();
 }
 
+function removeLoader(){
+    $("body").addClass("loaded");
+
+}
 function landingPage() {
     $('.container').on('click', '.welcomeBtn', function (event) {
         $('.container').remove();
