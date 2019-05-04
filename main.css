@@ -495,7 +495,10 @@ footer {
 i {
     margin: 0em 1em;
 }
-
+.jq img{
+    height: 25px;
+    margin-bottom: -0.4em;
+}
 .center {
     text-align: center;
     margin: auto;
