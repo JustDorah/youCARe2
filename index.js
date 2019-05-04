@@ -15,7 +15,6 @@ function appStart() {
     $(window).on('load', removeLoader());
     landingPage();
     submitVinMileageInfo();
-    cleanOutData();
 }
 
 function removeLoader(){
@@ -170,7 +169,7 @@ function getCarMaintenance(vin, milesDriven) {
             cleanOutData(responseJson);
         })
         .catch(err => {
-            console.log('error', err)
+            console.log('error', err);
         });
 }
 
